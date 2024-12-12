@@ -1,0 +1,560 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.05em;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+  /* タブレット用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+
+ /* ==================== ヘッダー ================== */
+  .header {
+    top: 13px;
+    left: 22px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .logo img{
+    width: 120px;
+  }
+
+ /* ==================== スライダー ================== */
+
+  /* リロード時スライダー他画像非表示 */
+  .slider {
+    visibility: hidden;
+  }
+  .slider.slick-initialized {
+    visibility: visible;
+  }
+
+  .slider img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(90%);
+  }
+
+  .slider-item{
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider-img-01 img {
+    transform: scale(1.1);
+    object-position: 60% 100%;
+  }
+
+  .slider-img-02 img{
+    object-position: 77% 80%;
+  }
+
+  .slider-img-03 img {
+    transform: scale(1.1);
+    object-position: 31% 100%;
+  }
+
+
+ /* ==================== スクロールダウン線 ================== */
+  /* スクロールダウンの位置 */
+  .scroll {
+    position: absolute;
+    right: 50%;
+    bottom: 40px;
+    writing-mode: vertical-rl;
+  }
+
+  /* 線の背景色 */
+  .scroll::after {
+    background-color: #ccc;
+    content: "";
+    height: 80px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 1px;
+  }
+
+ /* ==================== concept-section ================== */
+  .concept-section {
+    text-align: center;
+    gap: 30px;
+    font-family: 'Noto Serif JP';
+    font-weight: bolder;
+  }
+
+  .con-text {
+    margin: 130px 0 105px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+  }
+
+  .concept-section p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2.5em;
+    letter-spacing: 0.1em;
+  }
+
+  .sec-title {
+    margin: 16px 0 20px;
+    color: #cdcdcd;
+    font-family: 'Noto Sans JP';
+  }
+
+  .con-img {
+    max-width: 92vw;
+    height: auto;
+    aspect-ratio: 17 / 10;
+    margin-left: auto;
+    overflow: hidden;
+  }
+
+  .con-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    object-position: 50% 35%;
+  }
+
+ /* ==================== main-section ================== */
+  .main-section {
+    margin-top: 105px;
+  }
+
+  .main-tall-img {
+    max-width: 80vw;
+    max-height: 550px;
+    aspect-ratio: 5 / 7;
+  }
+
+  .main-tall-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .tall-img-future {
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .tall-img-future img {
+    transform: scale(1.2);
+    object-position: 50% 90%;
+  }
+
+  .main-wide-img {
+    max-width: 93vw;
+    margin-left: auto;
+    aspect-ratio: 7 / 5;
+  }
+
+  .main-wide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .main-text {
+    margin: 0 75px 105px 50px;
+  }
+
+  .main-section h2 {
+    margin: 30px 0 10px;
+    font-size: 24px;
+    font-family: 'Noto Serif JP';
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+  }
+
+  .main-section p {
+    font-family: 'Noto Sans JP';
+    font-weight: normal;
+    line-height: 2em;
+    letter-spacing: 0.15em;
+  }
+
+  .forest-text-01 {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .forest-text-02 {
+    font-size: 9px;
+  }
+
+ /* ==================== footer ================== */
+  .footer{
+    text-align: center;
+  }
+
+  .footer-img {
+    width: 100vw;
+    aspect-ratio: 9 / 5;
+    overflow: hidden; /* 親要素の枠を超えた部分を隠す */
+    position: relative; /* 子要素の配置用に相対配置を指定 */
+  }
+
+  .footer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .footer h3{
+    margin: 55px 0;
+    font-family: 'Noto Serif JP';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+  }
+
+  .ec-link {
+    padding: 15px 40px;
+    font-family: 'Noto Serif JP';
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 1px #333333;
+    border-radius: 75px;
+    letter-spacing: 0.15em;
+  }
+
+  .copy {
+    margin: 65px 0 40px;
+    font-family: 'Noto Sans JP';
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+
+}
+
+@media screen and (min-width: 601px) {
+  /* タブレット用レイアウト 601px以上の範囲に収めるデザインはこの中に記述 */
+
+  /*==============================================================
+  　　　TB_HOME
+  ==============================================================*/
+  /* ==================== ヘッダー ================== */
+  .header {
+    top: 23px;
+    left: 40px;
+  }
+
+  .logo img{
+    width: 150px;
+  }
+
+ /* ==================== concept-section ================== */
+  /* スマホのみ改行 */
+  .br-sp {
+    display: none;
+  }
+
+  .con-text {
+    margin: 135px 0 150px;
+  }
+
+  h1 {
+    font-size: 35px;
+    letter-spacing: 0.15em;
+
+  }
+
+  .concept-section p {
+    font-size: 20px;
+    letter-spacing: 0.15em;
+  }
+
+  .sec-title {
+    margin: 25px 0 35px;
+    letter-spacing: 0.15em;
+
+  }
+
+  .con-img {
+    max-height: 600px;
+  }
+
+ /* ==================== main-section ================== */
+  .main-section {
+    margin-top: 205px;
+  }
+
+  .main-sec-forest {
+    display: flex;
+    margin-bottom: 135px;
+  }
+
+  .main-sec-future {
+    display: flex;
+    margin-bottom: 210px;
+  }
+
+  .main-tall-img {
+    max-width: 55vw;
+    max-height: 600px;
+    aspect-ratio: 5 / 7;
+  }
+
+  .main-section h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+  }
+
+  .main-text {
+    margin: 0 0 0 57px;
+    max-width: 262px;
+    align-content: center;
+  }
+
+  .main-sec-people {
+    margin-bottom: 125px;
+  }
+
+  .main-sec-people h2 {
+    margin-top: 35px;
+  }
+
+  .main-sec-people .main-text {
+    margin-left: 20vw;
+    max-width: none;
+  }
+
+  .main-wide-img {
+    width: 90vw;
+    max-height: 400px;
+  }
+
+  .main-wide-img img {
+    object-position: 50% 45%;
+  }
+
+  .br-tb-non {
+    display: none;
+  }
+
+ /* ==================== footer ================== */
+  .footer-img img {
+    object-position: 0% 30%;
+  }
+
+  .footer h3{
+    margin: 70px 0 85px;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+  }
+
+  .ec-link {
+    padding: 20px 65px;
+  }
+
+  .copy {
+    margin: 100px 0 45px;
+    font-size: 11px;
+  }
+
+}
+
+
+@media screen and (min-width: 1001px) {
+  /* パソコン用レイアウト 1081px以上の範囲に収めるデザインはこの中に記述 */
+
+  /*==============================================================
+  　　　PC_HOME
+  ==============================================================*/
+  /* ==================== ヘッダー ================== */
+  .logo img{
+    width: 165px;
+  }
+
+ /* ==================== スライダー ================== */
+  .slider-img-01 img {
+    transform: scale(1);
+    object-position: 55% 33%;
+  }
+
+  .slider-img-02 img{
+    transform: scale(1.2);
+    object-position: 80% 100%;
+  }
+
+  .slider-img-03 img {
+    transform: scale(1);
+    object-position: 33% 30%;
+  }
+
+ /* ==================== スクロールダウン線 ================== */
+
+  .scroll {
+    bottom: 60px;
+  }
+  .scroll::after {
+    height: 120px;
+  }
+
+   /* ==================== concept-section ================== */
+   .con-text {
+    margin: 250px 0 215px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .concept-section p {
+    font-size: 24px;
+  }
+
+  .sec-title {
+    margin: 35px 0;
+  }
+
+  .con-img {
+    max-height: 700px;
+    width: 90vw;
+  }
+
+  .con-img img{
+    transform: scale(1);
+  }
+
+  /* ==================== main-section ================== */
+
+  .main-section {
+    margin-top: 200px;
+    justify-items: center;
+  }
+
+  .br-tb-non {
+    display: block;
+  }
+
+  .main-sec-img {
+    width: 470px;
+    height: 300px;
+  }
+
+  .main-sec-img {
+    border-radius: 25px;
+  }
+
+  .main-sec-img img {
+    border-radius: 25px;
+  }
+
+  .main-wide-img {
+    margin-left: 0;
+  }
+
+  .main-sec-people {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .main-text {
+    margin: 0 auto;
+    max-width: 470px;
+    padding-left: 30px;
+  }
+
+  .main-sec-people .main-text{
+    margin: 0 auto;
+    padding-right: 30px;
+    align-content: center;
+  }
+
+  .main-item {
+    width: 940px;
+  }
+
+  .main-section h2 {
+    font-size: 30px;
+  }
+
+  .main-section p {
+    font-size: 16px;
+    line-height: 2.3em;
+    margin-bottom: 20px;
+  }
+
+  .main-section .forest-text-01 {
+    margin-bottom: 15px;
+  }
+
+  .main-sec-forest, .main-sec-people {
+    margin-bottom: 105px;
+  }
+
+  .main-text .forest-text-02 {
+    font-size: 10px;
+  }
+
+  .main-sec-future {
+    margin-bottom: 225px;
+  }
+
+  .main-sec-forest img {
+    object-position: 50% 30%;
+  }
+
+  .main-sec-future img {
+    transform: scale(1);
+    object-position: 50% 70%;
+  }
+
+ /* ==================== footer ================== */
+  .footer-img {
+    max-height: 550px;
+  }
+
+ .footer-img img {
+    height: auto;
+    max-height: 100%;
+  }
+
+  .footer h3{
+    margin: 115px 0 140px;
+    font-size: 30px;
+  }
+
+  .ec-link {
+    padding: 28px 85px;
+    font-size: 25px;
+  }
+
+  .copy {
+    margin: 150px 0 45px;
+    font-size: 11px;
+  }
+
+
+
+
+
+}
