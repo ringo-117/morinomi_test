@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-feature-settings: 'palt' 1;
@@ -181,6 +180,7 @@ body {
 
   .main-text {
     margin: 0 75px 105px 50px;
+    font-size: 14px;
   }
 
   .main-section h2 {
@@ -201,7 +201,6 @@ body {
 
   .forest-text-01 {
     margin-bottom: 15px;
-    font-size: 14px;
   }
 
   .forest-text-02 {
@@ -227,7 +226,7 @@ body {
   }
 
   .footer h3{
-    margin: 55px 0;
+    margin: 55px 0 65px;
     font-family: 'Noto Serif JP';
     font-size: 20px;
     font-weight: bold;
@@ -235,9 +234,9 @@ body {
   }
 
   .ec-link {
-    padding: 15px 40px;
+    padding: 15px 45px;
     font-family: 'Noto Serif JP';
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     border: solid 1px #333333;
     border-radius: 75px;
@@ -245,12 +244,11 @@ body {
   }
 
   .copy {
-    margin: 65px 0 40px;
+    margin: 80px 0 40px;
     font-family: 'Noto Sans JP';
     font-size: 11px;
     letter-spacing: 0.1em;
   }
-
 
 }
 
@@ -283,7 +281,6 @@ body {
   h1 {
     font-size: 35px;
     letter-spacing: 0.15em;
-
   }
 
   .concept-section p {
@@ -294,7 +291,6 @@ body {
   .sec-title {
     margin: 25px 0 35px;
     letter-spacing: 0.15em;
-
   }
 
   .con-img {
@@ -372,6 +368,7 @@ body {
 
   .ec-link {
     padding: 20px 65px;
+    font-size: 18px;
   }
 
   .copy {
@@ -539,7 +536,7 @@ body {
   }
 
   .footer h3{
-    margin: 115px 0 140px;
+    margin: 110px 0 120px;
     font-size: 30px;
   }
 
@@ -552,9 +549,5 @@ body {
     margin: 150px 0 45px;
     font-size: 11px;
   }
-
-
-
-
 
 }
