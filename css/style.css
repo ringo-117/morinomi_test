@@ -80,7 +80,7 @@ body {
 
   /* 線の背景色 */
   .scroll::after {
-    background-color: #ccc;
+    background-color: #cdcdcd;
     content: "";
     height: 80px;
     left: 0;
@@ -118,7 +118,7 @@ body {
 
   .sec-title {
     margin: 16px 0 20px;
-    color: #cdcdcd;
+    color: #cccccc;
     font-family: 'Noto Sans JP';
   }
 

@@ -21,7 +21,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
 
-  <link rel="shortcut icon" href="./img/favicon.webp"> <!-- ファビコン -->
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="./img/favicon.webp">
+  <!-- ロゴ画像を事前に読み込む -->
+  <link rel="preload" href="img/logo_shadow.webp" as="image">
+
+  <!-- css -->
   <link rel="stylesheet" href="./slick/slick.css">
   <link rel="stylesheet" href="./slick/slick-theme.css">
   <link rel="stylesheet" href="css/destyle.css">
@@ -127,7 +132,7 @@
 
     <footer class="footer">
       <figure class="footer-img">
-        <img src="img/footer_img.png" alt="morinomiティッシュ">
+        <img src="img/footer_img.webp" alt="morinomiティッシュ">
       </figure>
       <h3>mori no mi ティッシュ</h3>
       <a class="ec-link" href="https://8oneonlineshop.myshopify.com/" target="_blank">ご購入はこちらから</a>
