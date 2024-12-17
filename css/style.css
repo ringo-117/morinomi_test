@@ -35,9 +35,19 @@ body {
   /* リロード時スライダー他画像非表示 */
   .slider {
     visibility: hidden;
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
   }
   .slider.slick-initialized {
     visibility: visible;
+  }
+
+  .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像がスライダーに合わせてリサイズ */
   }
 
   .slider img {
@@ -51,6 +61,10 @@ body {
     max-width: 100vw;
     overflow: hidden;
     position: relative;
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
   }
 
   .slider-img-01 img {

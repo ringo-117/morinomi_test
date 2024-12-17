@@ -139,25 +139,32 @@
       <P class="copy">Copyright &copy; 2024 エイトワン株式会社 morinomi project</P>
     </footer>
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- 最新版のjQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Migrate（互換性を保つため） -->
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
 
     <!-- Slick -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
       $(document).ready(function(){
-        $('.slider').slick({
-          arrows: false,
-          dots: true,
+        var slider = $('.slider');
+
+        slider.slick({
           autoplay: true,
-          infinite: true,
-          speed: 700,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+          dots: true,
+          arrows: false,
+          speed: 1000,
           fade: true,
-          cssEase: 'linear',
           autoplaySpeed: 2000,
-          pauseOnHover: false, // カーソルを当てても停止しない
-          pauseOnFocus: false // フォーカスされても止まらない
+        });
+
+        // 画像クリック時にautoplayを再スタート
+        $('.slider-item').on('click', function() {
+          slider.slick('slickPlay'); // 自動再生を再スタート
         });
       });
     </script>
