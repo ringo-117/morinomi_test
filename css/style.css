@@ -70,15 +70,15 @@ body {
 
  /* ==================== スクロールダウン線 ================== */
   /* スクロールダウンの位置 */
-  .scroll {
+  /* .scroll {
     position: absolute;
     right: 50%;
     bottom: 40px;
     writing-mode: vertical-rl;
-  }
+  } */
 
   /* 線の背景色 */
-  .scroll::after {
+  /* .scroll::after {
     background-color: #cdcdcd;
     content: "";
     height: 80px;
@@ -87,6 +87,11 @@ body {
     position: absolute;
     right: 0;
     width: 1px;
+  } */
+
+  /* Dots */
+  .slick-dots li button:before {
+    top: 10px;
   }
 
  /* ==================== concept-section ================== */
@@ -268,6 +273,11 @@ body {
     width: 150px;
   }
 
+  /* Dots */
+  .slick-dots li button:before {
+    top: 15px;
+  }
+
  /* ==================== concept-section ================== */
   /* スマホのみ改行 */
   .br-sp {
@@ -275,7 +285,7 @@ body {
   }
 
   .con-text {
-    margin: 135px 0 150px;
+    margin: 150px 0 150px;
   }
 
   h1 {
