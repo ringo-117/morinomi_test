@@ -81,28 +81,6 @@ body {
     object-position: 31% 100%;
   }
 
-
- /* ==================== スクロールダウン線 ================== */
-  /* スクロールダウンの位置 */
-  /* .scroll {
-    position: absolute;
-    right: 50%;
-    bottom: 40px;
-    writing-mode: vertical-rl;
-  } */
-
-  /* 線の背景色 */
-  /* .scroll::after {
-    background-color: #cdcdcd;
-    content: "";
-    height: 80px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    width: 1px;
-  } */
-
   /* Dots */
   .slick-dots li button:before {
     top: 10px;
@@ -185,16 +163,19 @@ body {
   }
 
   .main-wide-img {
+    overflow: hidden;
     max-width: 93vw;
     margin-left: auto;
     aspect-ratio: 7 / 5;
+    border-radius: 15px 0 0 15px;
   }
 
   .main-wide-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px 0 0 15px;
+    transform: scale(1.18);
+    object-position: 65% 0%;
   }
 
   .main-text {
@@ -372,7 +353,8 @@ body {
   }
 
   .main-wide-img img {
-    object-position: 50% 45%;
+    transform: scale(1.2);
+    object-position: 50% 26%;
   }
 
   .br-tb-non {
@@ -491,6 +473,10 @@ body {
 
   .main-wide-img {
     margin-left: 0;
+  }
+
+  .main-wide-img img {
+    transform: scale(1.25);
   }
 
   .main-sec-people {
