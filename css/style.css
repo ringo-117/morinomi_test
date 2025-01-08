@@ -27,7 +27,8 @@ body {
   }
 
   .logo img{
-    width: 105px;
+    width: 120px;
+    /* width: 105px; */
     filter: drop-shadow(2px 2px 2px rgba(112, 112, 112, 0.6));
   }
 
@@ -74,7 +75,7 @@ body {
   }
 
   .slider-img-02 img{
-    object-position: 77% 80%;
+    object-position: 50% 0%;
   }
 
   .slider-img-03 img {
@@ -262,18 +263,25 @@ body {
   ==============================================================*/
   /* ==================== ヘッダー ================== */
   .header {
-    top: 30px;
+    top: 25px;
     left: 45px;
   }
 
   .logo img{
-    width: 135px;
+    width: 150px;
+    /* width: 135px; */
   }
 
   /* Dots */
   .slick-dots li button:before {
     top: 15px;
   }
+
+   /* ==================== スライダー ================== */
+  .slider-img-02 img{
+    object-position: 50% 50%;
+  }
+
 
  /* ==================== concept-section ================== */
   /* スマホのみ改行 */
@@ -401,9 +409,10 @@ body {
   ==============================================================*/
   /* ==================== ヘッダー ================== */
   .logo img{
-    top: 25px;
+    top: 30px;
     left: 30px;
-    width: 145px;
+    /* width: 145px; */
+    width: 160px;
   }
 
  /* ==================== スライダー ================== */
@@ -413,8 +422,8 @@ body {
   }
 
   .slider-img-02 img{
-    transform: scale(1.2);
-    object-position: 80% 100%;
+    transform: scale(1);
+    object-position: 0% 75%;
   }
 
   .slider-img-03 img {
