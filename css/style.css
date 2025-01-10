@@ -126,7 +126,7 @@ body {
 
     /* パターン３ */
     /* ふわっと左から表示 */
-  .con-left.offs .effect {
+  /* .con-left.offs .effect {
     opacity: 0;
     transform: translate(-100px, 0);
     -webkit-transform: translate(-100px, 0);
@@ -137,9 +137,9 @@ body {
     transform: translate(0, 0);
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
-  }
+  } */
   /* ふわっと右から表示 */
-  .con-right.offs .effect {
+  /* .con-right.offs .effect {
     opacity: 0;
     transform: translate(100px, 0);
     -webkit-transform: translate(100px, 0);
@@ -150,8 +150,32 @@ body {
     transform: translate(0, 0);
     -webkit-transition: all 2s ease;
     transition: all 2s ease;
-  }
+  } */
 
+
+  /* パターン４ */
+/*ふわっと下から表示*/
+  .con-items.offs .effect {
+    opacity: 0;
+    transform: translate(0, 100px);
+    -webkit-transform: translate(0, 100px);
+  }
+  .con-items.ons .effect {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  /*以下、遅延の設定*/
+  .con-items.ons .delay-1 {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .con-items.ons .delay-2 {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
 
 
  .concept-section {
