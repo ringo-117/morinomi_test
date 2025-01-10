@@ -88,7 +88,22 @@ body {
   }
 
  /* ==================== concept-section ================== */
-  .concept-section {
+  /* アニメーション */
+  /*ふわっと下から表示*/
+  .con-items.offs .effect {
+    opacity: 0;
+    transform: translate(0, 100px);
+    -webkit-transform: translate(0, 100px);
+  }
+  .con-items.ons .effect {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+
+ .concept-section {
     text-align: center;
     gap: 30px;
     font-family: 'Noto Serif JP';
@@ -176,8 +191,8 @@ body {
   }
   /*以下、遅延の設定*/
   .text-items.ons .delay-1 {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
 
  .main-section {
