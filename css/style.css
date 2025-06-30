@@ -13,14 +13,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-img {
-    max-block-size: 100%;
-    max-inline-size: 100%;
-}
-*, :after, :before {
-    box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 @media screen and (min-width: 320px) {
@@ -45,9 +38,8 @@ img {
   .slider {
     visibility: hidden;
 
-    /* position: relative; */
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* height: calc(100vh + 60px); */
     
     /* position: fixed; */
@@ -55,44 +47,6 @@ img {
     left: 0; */
     box-sizing: inherit;
 
-  }
-  .slider.slick-initialized {
-    visibility: visible;
-  }
-
-  .slider-item img {
-    /* width: 100%;
-    height: 100%; */
-    /* object-fit: cover; 画像がスライダーに合わせてリサイズ */
-    /* height: calc(100vh + 60px); */
-    /* overflow: hidden; */
-
-    filter: brightness(90%);
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    max-width: none;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom center;
-
-  }
-
-  .slider img {
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* max-height: 100vh; */
-    /* height: 100%; */
-
-    /* overflow: hidden; */
-
-    /* object-fit: cover; */
-    
   }
 
   .slider-item{
@@ -109,21 +63,76 @@ img {
     width: 100%; */
     /* height: 100vh; */
     /* min-height: 100vh; */
-    /* background-color: aqua; */
+    background-color: aqua;
 
     /* text-align: center;
     align-content: center;
     font-size: 60px; */
+    position: relative;
 
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    /* background-color: aqua;
     background-size: cover;
     background-position: center;
-    position: fixed; /* 画面に固定 */
+    position: fixed; 画面に固定
     top: 0;
-    left: 0;
+    left: 0; */
   }
+
+
+/* .slider-item {
+  height: 100%;
+  width: 100%;
+}
+
+.slider-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+
+  .slider.slick-initialized {
+    visibility: visible;
+  }
+
+  .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* height: calc(100vh + 60px); */
+    /* overflow: hidden; */
+
+    filter: brightness(90%);
+    /* bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center; */
+
+  }
+
+  /* .slider img { */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* max-height: 100vh; */
+    /* height: 100%; */
+
+    /* overflow: hidden; */
+
+    /* object-fit: cover; */
+    
+  /* } */
+
+  
 
   .slider-img-01 img {
     transform: scale(1.1);
