@@ -488,15 +488,15 @@ body {
   /* タブレット縦用ヒーロー 768px〜820px用範囲に収めるデザインはこの中に記述 */
   /* ==================== スライダー ================== */
   .slider-item img {
-    height: 1045px;
+    height: 1065px;
   }
 
   .slider.slick-initialized {
-    height: 1045px;
+    height: 1065px;
   }
 
   .slider img {
-    height: 1000px;
+    height: 1065px;
   }
 
 }
