@@ -30,18 +30,14 @@
     <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
     <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/style.css?v=5.1">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
 
     <script>
-      function setFullHeight() {
-        const vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      function setVh() {
+        document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
       }
-      
-
-      window.addEventListener('resize', setFullHeight);
-      window.addEventListener('orientationchange', setFullHeight);
-      setFullHeight();
+      window.addEventListener('resize', setVh);
+      window.addEventListener('load', setVh);
     </script>
   </head>
 
@@ -55,21 +51,18 @@
       </figure>
     </header>
 
-    <!-- <div class="container"> -->
-      <div id="slider" class="slider">
-        <div class="slider-img-01 slider-item">
-          <img src="img/slider_1.webp" alt="ティッシュ" />
-        </div>
-        <div class="slider-img-02 slider-item">
-          <img src="img/slider_2.webp" alt="家族">
-
-        </div>
-        <div class="slider-img-03 slider-item">
-          <img src="img/slider_3.webp" alt="テラス" />
-        </div>
+    <div id="slider" class="slider">
+      <div class="slider-img-01 slider-item">
+        <img src="img/slider_1.webp" alt="ティッシュ" />
       </div>
-      <!-- <div class="cover"></div>
-    </div> -->
+      <div class="slider-img-02 slider-item">
+        <img src="img/slider_2.webp" alt="家族">
+
+      </div>
+      <div class="slider-img-03 slider-item">
+        <img src="img/slider_3.webp" alt="テラス" />
+      </div>
+    </div>
 
     <div class="scroll">
       <span></span>
