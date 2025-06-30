@@ -501,6 +501,23 @@ body {
 
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1180px) {
+  /* タブレット横用ヒーロー 768px〜820px用範囲に収めるデザインはこの中に記述 */
+  /* ==================== スライダー ================== */
+  .slider-item img {
+    height: 720px;
+  }
+
+  .slider.slick-initialized {
+    height: 720px;
+  }
+
+  .slider img {
+    height: 720px;
+  }
+
+}
+
 @media screen and (min-width: 1001px) {
   /* パソコン用レイアウト 1081px以上の範囲に収めるデザインはこの中に記述 */
 
