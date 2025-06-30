@@ -38,13 +38,14 @@ body {
     visibility: hidden;
 
     /* position: relative; */
-    /* width: 100%;
-    min-height: 100vh; */
+    width: 100%;
+    min-height: 100vh;
     /* height: calc(100vh + 60px); */
     
     /* position: fixed; */
     /* top: 0;
     left: 0; */
+    box-sizing: inherit;
 
   }
   .slider.slick-initialized {
