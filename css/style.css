@@ -40,6 +40,8 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
+    height: calc(100vh + 60px);
+
     /* overflow: hidden; */
   }
   .slider.slick-initialized {
@@ -57,9 +59,8 @@ body {
   .slider img {
     width: 100vw;
     height: 100vh;
-    height: calc(100vh + 60px);
-    max-height: 100vh;
-    overflow: hidden;
+    /* max-height: 100vh; */
+    /* overflow: hidden; */
 
     object-fit: cover;
     filter: brightness(90%);
